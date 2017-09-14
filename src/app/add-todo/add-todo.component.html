@@ -1,0 +1,6 @@
+<a routerLink="/">Add To Home</a>
+<form #todoFrom="ngForm" (ngSubmit)="onSubmit(todoFrom)">
+	ID: <input type="text" name="idTodo" ngModel #idTodo="ngModel"><br>
+	Name: <input type="text" name="nameTodo" ngModel #nameTodo="ngModel"><br>
+	<button type="submit">Submit</button>
+</form>
